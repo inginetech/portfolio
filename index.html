@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGINE TECH | Premium Web & App Development Services</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome for sleek social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom subtle glassmorphism */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-[#0B0F19] text-gray-100 font-sans antialiased selection:bg-[#00D2FF] selection:text-black">
+
+    <!-- ==========================================
+         1. HERO SECTION (Title, Slogan & Video)
+         ========================================== -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <!-- Background Video Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-[#0B0F19] z-10"></div>
+        
+        <!-- Placeholder Video (Abstract Tech Background) -->
+        <video autoplay loop muted playsinline class="absolute absolute-center w-full h-full object-cover z-0">
+            <source src="./WEBSITE 3 VIDEO.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Hero Content -->
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-[#00D2FF] to-[#0066FF] mb-6 drop-shadow-lg">
+                INGINE TECH
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-gray-300 tracking-wide mb-8 max-w-2xl mx-auto">
+                Engineered for Digital Perfection. We build high-performance static websites and cutting-edge mobile applications.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#portfolio" class="px-8 py-4 bg-[#00D2FF] hover:bg-[#00B4DB] text-black font-semibold rounded-lg transition-all duration-300 transform hover:-translate-y-1 shadow-[0_4px_20px_rgba(0,210,255,0.4)]">
+                    View Our Work
+                </a>
+                <a href="#contact" class="px-8 py-4 border border-white/20 hover:border-[#00D2FF] text-white font-semibold rounded-lg transition-all duration-300 hover:bg-white/5">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+            <a href="#portfolio" class="text-gray-400 hover:text-[#00D2FF]">
+                <i class="fa-solid fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         2. PORTFOLIO SECTION (Previous Products)
+         ========================================== -->
+  <section id="portfolio" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold tracking-tight text-white mb-4">Our Previous Work</h2>
+            <div class="h-1 w-20 bg-[#00D2FF] mx-auto rounded"></div>
+            <p class="text-gray-400 mt-4 max-w-xl mx-auto">Take a look at our recent digital deployments crafted with clean code, extreme speed, and stunning UX.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><a href="https://play.google.com/store/apps/details?id=com.deals.flashdeals">
+            <div class="glass-card rounded-xl overflow-hidden group hover:border-[#00D2FF]/50 transition-all duration-300">
+                <div class="h-48 bg-gradient-to-tr from-[#0066FF] to-[#00D2FF] relative overflow-hidden flex items-center justify-center">
+                    <i class="fa-solid fa-bolt text-white text-6xl opacity-40 group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-[#00D2FF] tracking-widest uppercase">Mobile Application</span>
+                    <h3 class="text-xl font-bold text-white mt-1 mb-2">Flash Deals App</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">A lightning-fast e-commerce marketing platform optimized for high conversion and real-time user engagement.</p>
+                </div>
+            </div></a>
+
+
+
+            <div class="glass-card rounded-xl overflow-hidden group hover:border-[#00D2FF]/50 transition-all duration-300"><a href="https://swamirajtoursandtravels.com/">
+                <div class="h-48 bg-gradient-to-tr from-[#111827] to-[#1F2937] relative overflow-hidden flex items-center justify-center">
+                    <i class="fa-solid fa-laptop-code text-white text-6xl opacity-40 group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-[#00D2FF] tracking-widest uppercase">Static Website</span>
+                    <h3 class="text-xl font-bold text-white mt-1 mb-2">SWAMIRAJ T&T</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">An ultra-lightweight, SEO-maximized corporate landing page built with modern Jamstack static generation frameworks.</p>
+                </div>
+            </div></a>
+
+
+
+            <div class="glass-card rounded-xl overflow-hidden group hover:border-[#00D2FF]/50 transition-all duration-300"><a href="https://play.google.com/store/apps/details?id=com.sweep.giftrush">
+                <div class="h-48 bg-gradient-to-tr from-[#00D2FF] to-[#059669] relative overflow-hidden flex items-center justify-center">
+                    <i class="fa-solid fa-layer-group text-white text-6xl opacity-40 group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-[#00D2FF] tracking-widest uppercase">MOBILE APP</span>
+                    <h3 class="text-xl font-bold text-white mt-1 mb-2">GIFT RUSH</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">A sleek, feature-packed interactive user panel optimized for flawless multi-device responsiveness and speed.</p>
+                </div>
+            </div></a>
+
+
+
+            <div class="glass-card rounded-xl overflow-hidden group hover:border-[#00D2FF]/50 transition-all duration-300"><a href="https://yashraj005.github.io/Vijaydip/">
+                <div class="h-48 bg-gradient-to-tr from-[#7C3AED] to-[#DB2777] relative overflow-hidden flex items-center justify-center">
+                    <i class="fa-solid fa-store text-white text-6xl opacity-40 group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-[#00D2FF] tracking-widest uppercase">Static Website</span>
+                    <h3 class="text-xl font-bold text-white mt-1 mb-2">VIJAYDEEP NURSERY</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">A blistering fast catalog landing page displaying thousands of products with zero server load or latency issues.</p>
+                </div>
+            </div></a>
+
+
+
+            <div class="glass-card rounded-xl overflow-hidden group hover:border-[#00D2FF]/50 transition-all duration-300"><a href="https://play.google.com/store/apps/details?id=com.vynce.unsaid">
+                <div class="h-48 bg-gradient-to-tr from-[#EA580C] to-[#EAB308] relative overflow-hidden flex items-center justify-center">
+                    <i class="fa-solid fa-wallet text-white text-6xl opacity-40 group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-[#00D2FF] tracking-widest uppercase">Mobile Application</span>
+                    <h3 class="text-xl font-bold text-white mt-1 mb-2">UNSAID</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">A secure, heavily encrypted Android app tailored for smooth conversations and psychological management .</p>
+                </div>
+            </div></a>
+
+
+
+            <div class="glass-card rounded-xl overflow-hidden group hover:border-[#00D2FF]/50 transition-all duration-300"><a href="https://play.google.com/store/apps/details?id=com.edu.translateforme">
+                <div class="h-48 bg-gradient-to-tr from-[#0369A1] to-[#00D2FF] relative overflow-hidden flex items-center justify-center">
+                    <i class="fa-solid fa-bullhorn text-white text-6xl opacity-40 group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-[#00D2FF] tracking-widest uppercase">MOBILE APP</span>
+                    <h3 class="text-xl font-bold text-white mt-1 mb-2">TRANSLATE FOR ME</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">A localized application used for translating and reading aloudS.</p>
+                </div>
+            </div></a>
+        </div>
+    </section>
+    <!-- ==========================================
+         3. ABOUT & SPECIALITIES SECTION
+         ========================================== -->
+    <section class="bg-[#0F1626] py-24 px-6 border-y border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            <!-- Left Side: Information -->
+            <div>
+                <span class="text-sm font-bold text-[#00D2FF] tracking-widest uppercase">Who We Are</span>
+                <h2 class="text-4xl font-bold text-white mt-2 mb-6">We turn complex digital ideas into clean, fast realities.</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    At <strong>INGINE TECH</strong>, we specialize in delivering razor-sharp digital solutions. Whether you need an blazing-fast static website to anchor your online identity or a robust mobile application to serve your customers, we engineer it completely from scratch. 
+                </p>
+                <p class="text-gray-400 leading-relaxed">
+                    Our builds prioritize performance, high-tier visual design, and extreme technical optimization. We don't just build links; we forge high-speed digital pathways for your brand.
+                </p>
+            </div>
+
+            <!-- Right Side: Specialities -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Speciality 1 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-[#00D2FF]/10 text-[#00D2FF] rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Blazing Speed</h4>
+                    <p class="text-gray-400 text-sm">Perfect lighthouse scores, instant load times, and heavily optimized asset pipelines.</p>
+                </div>
+
+                <!-- Speciality 2 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-[#0066FF]/10 text-[#0066FF] rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Fluid Responsiveness</h4>
+                    <p class="text-gray-400 text-sm">Flawless design translations across phones, tablets, and high-res ultra-wide displays.</p>
+                </div>
+
+                <!-- Speciality 3 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Clean Semantics</h4>
+                    <p class="text-gray-400 text-sm">Valid, standardized code architecture built ready for massive scalability.</p>
+                </div>
+
+                <!-- Speciality 4 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">SEO Optimized</h4>
+                    <p class="text-gray-400 text-sm">Built-in visibility strategies ensuring search engine crawlers rank your site immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. CUSTOMER REVIEWS SECTION
+         ========================================== -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold tracking-tight text-white mb-4">Client Feedback</h2>
+            <div class="h-1 w-20 bg-[#00D2FF] mx-auto rounded"></div>
+            <p class="text-gray-400 mt-4 max-w-xl mx-auto">Read honest feedback from businesses and clients we've worked alongside.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="glass-card p-8 rounded-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 mb-4 gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"INGINE TECH built our business landing page flawlessly. It loads instantly and our conversion rate went up by 40% immediately upon launch."</p>
+                </div>
+                <div class="border-t border-white/5 pt-4">
+                    <h5 class="text-white font-bold text-sm">VIJAYDEEP PATIL</h5>
+                    <span class="text-xs text-[#00D2FF]">Founder, VIJAYDEEP NURSERY</span>
+                </div>
+            </div>
+
+
+            <!-- Review 2 -->
+            <div class="glass-card p-8 rounded-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 mb-4 gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"The app implementation they engineered was robust and visually outstanding. Professional communication from day one through deployment."</p>
+                </div>
+                <div class="border-t border-white/5 pt-4">
+                    <h5 class="text-white font-bold text-sm">KETAN ZENDE</h5>
+                    <span class="text-xs text-[#00D2FF]">Product Lead, Flash Deals Group</span>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="glass-card p-8 rounded-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 mb-4 gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Clean structural layouts, reliable performance, and elite styling ,with whatsapp integration."</p>
+                </div>
+                <div class="border-t border-white/5 pt-4">
+                    <h5 class="text-white font-bold text-sm">HRUTIK CHAUDHAR</h5>
+                    <span class="text-xs text-[#00D2FF]">FOUNDER, SWAMIRAJ TOURS & TRAVELS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         5. CONTACT & SOCIAL MEDIA FOOTER
+         ========================================== -->
+    <footer id="contact" class="bg-[#060913] pt-20 pb-10 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            
+            <!-- Brand Column -->
+            <div class="lg:col-span-1">
+                <h3 class="text-2xl font-black tracking-wide text-white mb-4">INGINE TECH</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Engineering premier static architectures and performance-oriented applications for modern ambitious brands.
+                </p>
+            </div>
+
+            <!-- Channels / Quick Contacts -->
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest text-[#00D2FF]">Direct Support</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-xs text-[#00D2FF]"></i> avytech4040@gmail.com
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-clock text-xs text-[#00D2FF]"></i> Response within 12 hours
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Connect Channels (Requested Platforms) -->
+            <div class="md:col-span-2 lg:col-span-2">
+                <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest text-[#00D2FF]">Connect Securely</h4>
+                <div class="flex flex-wrap gap-4">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/yashraj._.39?igsh=cnVhaXoyZGV3dzg0&utm_source=qr" target="_blank" rel="noopener" class="flex items-center gap-3 px-5 py-3 rounded-lg glass-card text-gray-300 hover:text-white hover:border-pink-500/50 transition-all group">
+                        <i class="fa-brands fa-instagram text-xl text-pink-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm font-medium">Instagram</span>
+                    </a>
+                    
+                    <!-- Telegram -->
+                    <a href="https://t.me/+917972466572" target="_blank" rel="noopener" class="flex items-center gap-3 px-5 py-3 rounded-lg glass-card text-gray-300 hover:text-white hover:border-[#229ED9]/50 transition-all group">
+                        <i class="fa-brands fa-telegram text-xl text-[#229ED9] group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm font-medium">Telegram</span>
+                    </a>
+                    
+                    <!-- Whatsapp -->
+                    <a href="https://wa.me/+917387123310" target="_blank" rel="noopener" class="flex items-center gap-3 px-5 py-3 rounded-lg glass-card text-gray-300 hover:text-white hover:border-[#25D366]/50 transition-all group">
+                        <i class="fa-brands fa-whatsapp text-xl text-[#25D366] group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm font-medium">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Copyright Bar -->
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+            <p>&copy; 2026 INGINE TECH. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
