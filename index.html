@@ -265,6 +265,346 @@
         </div>
     </section>
 
+
+
+
+<!-- CONTACT FORM SECTION WITH TECH BLUE & ANIMATIONS -->
+<section id="custom-contact-section">
+    <div class="tech-form-container">
+        
+        <!-- Section Header -->
+        <div class="tech-form-header">
+            <h2>Get In Touch</h2>
+            <div class="tech-accent-line"></div>
+            <p>Have a complex digital architecture to build? Let's engineer it.</p>
+        </div>
+
+        <!-- The Form -->
+        <form id="ingineContactForm" novalidate>
+            <!-- Name Input -->
+            <div class="tech-input-group">
+                <label for="userName">Full Name</label>
+                <input type="text" id="userName" name="name" placeholder="e.g., John Doe" required>
+                <span id="nameError" class="tech-error-msg">Please enter your name.</span>
+            </div>
+
+            <!-- Email Input -->
+            <div class="tech-input-group">
+                <label for="userEmail">Email Address</label>
+                <input type="email" id="userEmail" name="email" placeholder="name@domain.com" required>
+                <span id="emailError" class="tech-error-msg">Please enter a valid email address.</span>
+            </div>
+
+            <!-- Phone Input -->
+            <div class="tech-input-group">
+                <label for="userPhone">Phone Number</label>
+                <input type="tel" id="userPhone" name="phone" placeholder="10-digit mobile number" required>
+                <span id="phoneError" class="tech-error-msg">Please enter a valid 10-digit phone number.</span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="tech-submit-btn">
+                <span>Deploy Message</span>
+            </button>
+        </form>
+
+        <!-- Success Message -->
+        <div id="formSuccessMessage" class="tech-success-toast">
+            <span class="pulse-dot"></span> System Status: Message Broadcasted Successfully.
+        </div>
+    </div>
+</section>
+
+<!-- PREMIUM CSS ANIMATIONS & STYLES -->
+<style>
+    /* Section Container Setup */
+    #custom-contact-section {
+        padding: 90px 20px;
+        background-color: #000000;
+        color: #ffffff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Main Box with Entrance Animation */
+    .tech-form-container {
+        width: 100%;
+        max-width: 600px;
+        background: #090b10;
+        padding: 50px 40px;
+        border: 1px solid #1a2333;
+        position: relative;
+        overflow: hidden;
+        animation: formReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) ease-out;
+    }
+
+    /* Subtle neon corner indicator to scream high-tech */
+    .tech-form-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 40px;
+        background: #00e5ff;
+    }
+
+    /* Typography & Header styling */
+    .tech-form-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .tech-form-header h2 {
+        font-size: 2.2rem;
+        margin: 0 0 12px 0;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .tech-accent-line {
+        height: 2px;
+        width: 60px;
+        background: linear-gradient(90deg, #0066ff, #00e5ff);
+        margin: 0 auto 20px auto;
+    }
+
+    .tech-form-header p {
+        color: #64748b;
+        font-size: 0.95rem;
+        margin: 0;
+    }
+
+    /* Form Inputs Layer */
+    .tech-input-group {
+        margin-bottom: 26px;
+        position: relative;
+    }
+
+    .tech-input-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 0.8rem;
+        color: #94a3b8;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+    }
+
+    .tech-input-group input {
+        width: 100%;
+        padding: 14px 16px;
+        background-color: #030406;
+        border: 1px solid #1e293b;
+        color: #ffffff;
+        font-size: 1rem;
+        outline: none;
+        box-sizing: border-box;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* INTERACTIVE HOVER EFFECTS ON INPUTS */
+    .tech-input-group input:hover {
+        border-color: #0066ff;
+        background-color: #05070b;
+    }
+
+    /* FOCUS STATE WITH TECHNICAL GLOW */
+    .tech-input-group input:focus {
+        border-color: #00e5ff;
+        box-shadow: 0 0 15px rgba(0, 229, 255, 0.15);
+        background-color: #05070b;
+    }
+
+    /* Dynamic change label color when typing */
+    .tech-input-group input:focus + label {
+        color: #00e5ff;
+    }
+
+    /* Error Messages */
+    .tech-error-msg {
+        color: #ff3355;
+        font-size: 0.8rem;
+        display: none;
+        margin-top: 6px;
+        font-weight: 500;
+        animation: slideDown 0.2s ease-out;
+    }
+
+    /* HIGH ENERGY TECH BLUE BUTTON */
+    .tech-submit-btn {
+        width: 100%;
+        padding: 16px;
+        background: linear-gradient(135deg, #0052d4, #4364f7);
+        color: #ffffff;
+        border: none;
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 20px rgba(67, 100, 247, 0.3);
+    }
+
+    /* HOVER EFFECT ON BUTTON */
+    .tech-submit-btn:hover {
+        background: linear-gradient(135deg, #0066ff, #00e5ff);
+        box-shadow: 0 0 25px rgba(0, 229, 255, 0.5);
+        transform: translateY(-2px);
+    }
+
+    /* ACTIVE BUTTON CLICK EFFECT */
+    .tech-submit-btn:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 10px rgba(0, 229, 255, 0.2);
+    }
+
+    /* Success Toast Setup */
+    .tech-success-toast {
+        display: none;
+        margin-top: 25px;
+        padding: 16px;
+        background-color: #00151a;
+        border: 1px solid #00e5ff;
+        color: #00e5ff;
+        text-align: center;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        animation: fadeIn 0.4s ease-out;
+    }
+
+    .pulse-dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #00e5ff;
+        border-radius: 50%;
+        margin-right: 8px;
+        animation: pulse 1.5s infinite;
+        vertical-align: middle;
+    }
+
+    /* ANIMATION KEYFRAMES */
+    @keyframes formReveal {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(0, 229, 255, 0.7); }
+        70% { box-shadow: 0 0 0 8px rgba(0, 229, 255, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(0, 229, 255, 0); }
+    }
+</style>
+
+<!-- JAVASCRIPT FOR ENGINE VALIDATION -->
+<script>
+    document.getElementById('ingineContactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const nameInput = document.getElementById('userName');
+        const emailInput = document.getElementById('userEmail');
+        const phoneInput = document.getElementById('userPhone');
+
+        const nameError = document.getElementById('nameError');
+        const emailError = document.getElementById('emailError');
+        const phoneError = document.getElementById('phoneError');
+        const successMessage = document.getElementById('formSuccessMessage');
+
+        let isValid = true;
+        
+        // Reset element parameters
+        nameError.style.display = 'none';
+        emailError.style.display = 'none';
+        phoneError.style.display = 'none';
+        successMessage.style.display = 'none';
+        
+        nameInput.style.borderColor = '#1e293b';
+        emailInput.style.borderColor = '#1e293b';
+        phoneInput.style.borderColor = '#1e293b';
+
+        // Name Validation
+        if (nameInput.value.trim() === '') {
+            nameError.style.display = 'block';
+            nameInput.style.borderColor = '#ff3355';
+            isValid = false;
+        }
+
+        // Email Validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.value.trim())) {
+            emailError.style.display = 'block';
+            emailInput.style.borderColor = '#ff3355';
+            isValid = false;
+        }
+
+        // Phone Validation (10 Digits)
+        const phoneRegex = /^[0-9]{10}$/;
+        if (!phoneRegex.test(phoneInput.value.trim())) {
+            phoneError.style.display = 'block';
+            phoneInput.style.borderColor = '#ff3355';
+            isValid = false;
+        }
+
+        // If checks clear
+        if (isValid) {
+            const formData = {
+                name: nameInput.value.trim(),
+                email: emailInput.value.trim(),
+                phone: phoneInput.value.trim()
+            };
+
+            console.log("Transmission Successful:", formData);
+            
+            // Display visual success response
+            successMessage.style.display = 'block';
+            document.getElementById('ingineContactForm').reset();
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- ==========================================
          5. CONTACT & SOCIAL MEDIA FOOTER
          ========================================== -->
