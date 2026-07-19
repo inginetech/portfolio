@@ -265,10 +265,7 @@
         </div>
     </section>
 
-
-
-
-<!-- CONTACT FORM SECTION WITH TECH BLUE & ANIMATIONS -->
+<!-- CONTACT FORM SECTION WITH TECH BLUE, ANIMATIONS, & WHATSAPP INTEGRATION -->
 <section id="custom-contact-section">
     <div class="tech-form-container">
         
@@ -304,13 +301,13 @@
 
             <!-- Submit Button -->
             <button type="submit" class="tech-submit-btn">
-                <span>Deploy Message</span>
+                <span>Deploy Message via WhatsApp</span>
             </button>
         </form>
 
         <!-- Success Message -->
         <div id="formSuccessMessage" class="tech-success-toast">
-            <span class="pulse-dot"></span> System Status: Message Broadcasted Successfully.
+            <span class="pulse-dot"></span> System Status: Message Broadcasted to WhatsApp.
         </div>
     </div>
 </section>
@@ -339,7 +336,7 @@
         animation: formReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) ease-out;
     }
 
-    /* Subtle neon corner indicator to scream high-tech */
+    /* Neon corner indicator */
     .tech-form-container::before {
         content: '';
         position: absolute;
@@ -407,22 +404,17 @@
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* INTERACTIVE HOVER EFFECTS ON INPUTS */
+    /* Interactive Hover Effects on Inputs */
     .tech-input-group input:hover {
         border-color: #0066ff;
         background-color: #05070b;
     }
 
-    /* FOCUS STATE WITH TECHNICAL GLOW */
+    /* Focus State with Technical Glow */
     .tech-input-group input:focus {
         border-color: #00e5ff;
         box-shadow: 0 0 15px rgba(0, 229, 255, 0.15);
         background-color: #05070b;
-    }
-
-    /* Dynamic change label color when typing */
-    .tech-input-group input:focus + label {
-        color: #00e5ff;
     }
 
     /* Error Messages */
@@ -435,7 +427,7 @@
         animation: slideDown 0.2s ease-out;
     }
 
-    /* HIGH ENERGY TECH BLUE BUTTON */
+    /* High Energy Tech Blue Button */
     .tech-submit-btn {
         width: 100%;
         padding: 16px;
@@ -453,14 +445,12 @@
         box-shadow: 0 4px 20px rgba(67, 100, 247, 0.3);
     }
 
-    /* HOVER EFFECT ON BUTTON */
     .tech-submit-btn:hover {
         background: linear-gradient(135deg, #0066ff, #00e5ff);
         box-shadow: 0 0 25px rgba(0, 229, 255, 0.5);
         transform: translateY(-2px);
     }
 
-    /* ACTIVE BUTTON CLICK EFFECT */
     .tech-submit-btn:active {
         transform: translateY(1px);
         box-shadow: 0 2px 10px rgba(0, 229, 255, 0.2);
@@ -493,7 +483,7 @@
         vertical-align: middle;
     }
 
-    /* ANIMATION KEYFRAMES */
+    /* Animations Keyframes */
     @keyframes formReveal {
         from { opacity: 0; transform: translateY(30px); }
         to { opacity: 1; transform: translateY(0); }
@@ -516,7 +506,7 @@
     }
 </style>
 
-<!-- JAVASCRIPT FOR ENGINE VALIDATION -->
+<!-- JAVASCRIPT FOR ENGINE VALIDATION & WHATSAPP REDIRECT -->
 <script>
     document.getElementById('ingineContactForm').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -565,18 +555,32 @@
             isValid = false;
         }
 
-        // If checks clear
+        // If checks clear, deploy to WhatsApp pipeline
         if (isValid) {
-            const formData = {
-                name: nameInput.value.trim(),
-                email: emailInput.value.trim(),
-                phone: phoneInput.value.trim()
-            };
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const phone = phoneInput.value.trim();
 
-            console.log("Transmission Successful:", formData);
+            // Construct clean text formatting with bold markdown tags for WhatsApp
+            const messageText = `*⚡ NEW INQUIRY - INGINE TECH*\n\n` +
+                                `👤 *Name:* ${name}\n` +
+                                `✉️ *Email:* ${email}\n` +
+                                `📞 *Phone:* ${phone}\n\n` +
+                                `_Sent automatically from portfolio contact portal._`;
+
+            // URL Encode the string parameters
+            const encodedMessage = encodeURIComponent(messageText);
             
-            // Display visual success response
+            // Build the URL API Endpoint using country code 91 for India
+            const whatsappUrl = `https://wa.me/917387123310?text=${encodedMessage}`;
+
+            // Show the UI confirmation status locally
             successMessage.style.display = 'block';
+            
+            // Open target message string directly in a new active tab pipeline
+            window.open(whatsappUrl, '_blank');
+            
+            // Clear out form text blocks
             document.getElementById('ingineContactForm').reset();
         }
     });
